@@ -1,0 +1,50 @@
+<html>
+<head>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-color:forestgreen
+            color: salmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box 
+        {
+            background-color:darkblue; 
+            border-radius: 8px;
+            box-shadow:black; 
+            padding: 20px;
+            width: 300px;
+        }
+        h1
+        {
+            color:hotpink;
+            text-align: center;
+            padding-top: 20px;
+        }
+        </style>
+</head>
+<body>
+    <div class="edge">
+    <div class="box">
+    <h1>NARMADHA S (212223220065)</h1>
+    <h2>SURFACE AREA OF RIGHT CYLINDER</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="formelt">
+        Radius: <input type="text" name="radius" value="{{r}}"></input><br/>
+    </div>
+    <div class="formelt">
+        Height: <input type="text" name="height" value="{{h}}"></input><br/></div>
+    <div class="formelt">
+    <input type="submit" value="Calculate"></input><br/></div>
+    <div class="formelt">
+        Area: <input type="text" name="area" value="{{area}}"></input><br/>
+    </div>
+</form></div>
+</div>
+</body>
+</html>
